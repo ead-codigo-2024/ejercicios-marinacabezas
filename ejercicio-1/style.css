@@ -1,0 +1,30 @@
+/* Paleta de colores:
+    Beige
+        rgb(254, 243, 226)
+        FEF3E2
+    
+    Verde claro
+        rgb(190, 198, 160)
+        BEC6A0
+
+    Verde oscuro
+        rgb(112, 136, 113)
+        708871
+
+    Azul
+        rgb(96, 102, 118)
+        606676
+*/
+
+body {
+    color: black;
+    background-color: rgb(254, 243, 226);
+    font-family: "Raleway"; sans-serif;
+}
+a {
+    color: rgb(112, 136, 113)
+}
+h1 {color:rgb(190, 198, 160)
+}
+h2 {color: rgb(96, 102, 118)
+}
