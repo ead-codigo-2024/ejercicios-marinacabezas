@@ -1,0 +1,81 @@
+span {
+    font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #232323
+}
+
+h2 {
+	font-family: 'Arvo';
+	font-style: bold;
+	font-weight: 700;
+	font-size: 60px;
+	color: #232323
+}
+
+p {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	/* or 156% */
+	color: #232323
+}
+
+a {
+    font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 130%;
+	color: #232323;
+}
+
+.banner {
+    display: grid;
+    max-width: max(1270px);
+    margin-inline: auto;
+    padding: 60px;
+    background-color: #EEFF41;
+    border-radius: 20px;
+}
+
+@media (min-width: 700px) {
+    .banner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+      gap: 2rem;
+    }
+}
+
+.banner__accesos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.banner__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: end
+}
+
+img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin-inline: auto;
+    margin-block-end: 1rem; 
+    border-radius: 50%;
+}
+
+.item__acceso{
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-decoration-line: underline;
+}
