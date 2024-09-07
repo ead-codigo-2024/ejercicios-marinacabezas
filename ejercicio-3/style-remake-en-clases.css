@@ -1,0 +1,50 @@
+.container {
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.container_header {
+    display:flex;
+    align-items: center;
+}
+
+.container_header h3 {
+    margin-inline-end: auto;
+}
+
+.container_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    .container_body{
+        grid-template-columns: unset;
+    }
+}
+
+.access {
+    position: relative;
+}
+
+.access_content {
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.access_tag {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: blue;
+}

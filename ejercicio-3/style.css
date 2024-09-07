@@ -1,10 +1,44 @@
+.contenedor_supremo {
+    max-width: 1028.5px;
+    margin-inline: auto;
+}
+
+.contenedor_header {
+    display:flex;
+    align-items: center;
+}
+
+.contenedor_header h3 {
+    margin-inline-end: auto;
+}
+
+.contenedor_ver_mas {
+    display:flex;
+    align-items: center;
+    margin-inline-start: auto;
+    gap: 12px;
+}
+
+.contenedor_ver_mas a {
+    font-family: 'Lato', sans-serif;
+	font-style: bold;
+	font-weight: 700;
+	font-size: 16px;
+    text-align: end;
+	color: #3B72C2;
+    text-decoration-line: none;
+}
+
+.contenedor_header img {
+    color: #3B72C2;
+    border-radius: 50%;
+    max-width: 20px;
+}
+
 .banner__noticias {
-    display:grid;
-    max-width: 1300px;
-    max-height: 680px;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    background-color: fuchsia;
+    gap: 32px;
     margin-inline: auto;
 }
 
@@ -12,33 +46,35 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
     position: relative;
 }
 
 .card__noticia {
-    max-width: 490px;
-    max-height: 680px;
+    max-width: 381px;
+    max-height: 532px;
     background-color:aquamarine;
 
     margin-inline: auto;
     margin-block-end: 1rem; 
-    border-radius: 15px;
+    border-radius: 3px;
     position: relative;
 }
 
 .seccion {
     display:inline-block;
+    position: absolute;
     background-color: #3B72C2;
-    padding: 0.5rem;
+    padding: 4px 8px;
     border-radius: 3px;
 
     font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 14px;
     text-align: center;
 	color: #ffffff;
+    text-decoration-line: none;
+    z-index: 2;
 }
 
 h3 {
@@ -49,11 +85,21 @@ h3 {
     color: #232323;
 }
 
-.container__titulo [data-sizing="intrinsic"] {
+.container__titulo {
     position:absolute;
-    width: min-content;
-    padding:2rem;
-    margin: 2rem;
+    min-height:fit-content;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding:20px;
     border-radius: 3px;
-    background-color: #0cf32b;
+    background-color: #ffffff;
+}
+
+.secciones {
+    display: flex;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    line-height: 1;
 }
