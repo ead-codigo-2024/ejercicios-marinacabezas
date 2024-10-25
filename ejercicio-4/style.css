@@ -1,0 +1,37 @@
+:root {
+    --primaryColor: #FEF3E2;
+    --secondaryColor: #606676;
+    --tertiaryColor: #BEC6A0;
+}
+
+body {
+    background-color: var(--primaryColor);
+    font-family: "Lato", sans-serif;
+}
+
+.bigContainer {
+    margin-inline: auto;
+    align-items: center;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-inline: auto;
+}
+
+button:hover {
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+}
+
+h1 {
+    font: 600;
+    color: var(--secondaryColor);
+}
