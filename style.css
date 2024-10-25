@@ -1,0 +1,31 @@
+:root {
+    --primaryColor: rgb(190, 198, 160);
+    --secondaryColor: rgb(96, 102, 118);
+    --tertiaryColor: rgb(254, 243, 226);
+}
+
+body {
+    background-color: var(--tertiaryColor);
+}
+
+.container {
+background-color: var(--primaryColor);
+margin-inline: auto;
+max-width: 600px;
+}
+
+.button {
+font-size: 1rem;
+font-weight: 600;
+background-color: var(--primaryColor);
+padding: 0.75rem 1.25rem;
+border: 2px solid var(--tertiaryColor);
+border-radius: 2rem;
+cursor: pointer;
+margin-inline: auto;
+}
+
+button:hover {
+    color: var(--tertiaryColor);
+    background-color: var(--primaryColor);
+}
