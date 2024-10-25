@@ -1,31 +1,54 @@
 :root {
-    --primaryColor: rgb(190, 198, 160);
-    --secondaryColor: rgb(96, 102, 118);
-    --tertiaryColor: rgb(254, 243, 226);
+    --primaryColor: #FEF3E2;
+    --secondaryColor: #606676;
+    --tertiaryColor: #BEC6A0;
 }
 
 body {
-    background-color: var(--tertiaryColor);
+    font-family: "Lato", sans-serif;
+    background-color: var(--primaryColor);
 }
 
 .container {
-background-color: var(--primaryColor);
-margin-inline: auto;
-max-width: 600px;
+    margin-inline: auto;
+    max-width: 600px;
 }
 
-.button {
-font-size: 1rem;
-font-weight: 600;
-background-color: var(--primaryColor);
-padding: 0.75rem 1.25rem;
-border: 2px solid var(--tertiaryColor);
-border-radius: 2rem;
-cursor: pointer;
-margin-inline: auto;
+h1 {
+    font: 600;
+    color: var(--secondaryColor);
 }
 
-button:hover {
-    color: var(--tertiaryColor);
+p {
+    color: var(--secondaryColor);
+    margin-bottom: 3rem;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
     background-color: var(--primaryColor);
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-inline: auto;
 }
+
+a:hover {
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration: none; 
+  } 
+a:visited { 
+    text-decoration: none; 
+  } 
+
+a:active { 
+    text-decoration: none; 
+  }
