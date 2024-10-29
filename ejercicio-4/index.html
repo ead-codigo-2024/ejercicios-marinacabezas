@@ -15,8 +15,26 @@
     <div class="bigContainer">
         <div class="titleContainer">
             <h1>¡Hola!</h1>
+            <p>¿Tienes 2 minutos para contestar un formulario de prueba?</p>
         </div>
-        <button>Botón</button>
+        <form action="" method="post">
+            <label for="name">¿Cómo te llamas?</label>
+            <input type="text" id="name" required/>
+            <legend>¿Es tu cumpleaños hoy?</legend>
+            <label class="radioButton" for="birthdayToday">¡Sí! :D<input type="radio" name="birthday" id="birthdayToday" value="Today"><span class="roundedCheckmark"></span></label>
+            <label class="radioButton" for="birthdayNotToday">No :c<input type="radio" name="birthday" id="birthdayNotToday" value="NotToday"><span class="roundedCheckmark"></span></label>
+            <legend>¿Prefieres gatos o perros?</legend>
+            <label class="radioButton"for="catlover">Gatos<input type="radio" name="animal" id="catlover" value="cat"><span class="roundedCheckmark"></span></label>
+            <label class="radioButton"for="doglover">Perros<input type="radio" name="animal" id="doglover" value="dog"><span class="roundedCheckmark"></span></label>
+            <label for="song">¿Cuál fue la primera canción que escuchaste hoy?</label>
+            <input type="text" id="song" required />
+            <legend>A continuación, marca las acciones que hayas realizado hoy:</legend>
+            <label class="checkbox">Tomé agua<input type="checkbox" name="actions" id="water" value="drankWater"><span class="checkmark"></span></label>
+            <label class="checkbox">Comí fruta<input type="checkbox" name="actions" id="fruit" value="ateFruit"><span class="checkmark"></span></label>
+            <label class="checkbox">Caminé un rato<input type="checkbox" name="actions" id="walk" value="walked"><span class="checkmark"></span></label>
+            <label class="checkbox">Hice un dibujito<input type="checkbox" name="actions" id="draw" value="drew"><span class="checkmark"></span></label>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
